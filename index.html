@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="ls-capslock.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <input id="teste" type="text" name="" value="">
+    </div>
+    <div>
+        <input id="lala" type="text" name="" value="" data-ls-capslock-message="Teste de mensagem">
+    </div>
+    <script>
+        $(document).ready(function () {
+            ls_capslock.init('input', 'lalal');
+        });
+    </script>
+    <script src="ls-capslock.js"></script>
+</body>
+
+</html>
