@@ -1,10 +1,23 @@
+.ls-capslock {
+    position: relative !important;
+}
+
 .ls-capslock-message {
     display: none;
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 99999;
 }
 
 .ls-capslock-message-showed {
     display: inherit;
+}
+
+.class1 {
+    color: red;
+}
+
+.class2 {
+    font-size: 20px;
 }
