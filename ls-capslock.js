@@ -96,7 +96,7 @@
     }
 
     function setUpElement(element, message, customClasses, position) {
-        var isInputText = element instanceof HTMLInputElement && element.type == 'text';
+        var isInputText = element instanceof HTMLInputElement && (element.type == 'text' || element.type == 'password' || element.type == 'email' || element.type == 'search' || element.type == 'url');
 
         if (!isInputText) throw 'Element must be a valid text input!';
 
@@ -118,7 +118,7 @@
         element.addEventListener('blur', blurHandler);
         document.addEventListener('keydown', docKeyDownHandler);
 
-        _customClasses = customClasses.split(' ');
+        _customClasses = (customClasses || '').split(' ');
         _position = position;
     };
 
@@ -166,10 +166,10 @@
                     id = options;
 
                 if (id.indexOf('#') !== -1)
-                    element = document.getElementById(id);
+                    element = document.getElementById(id.replace('#', ''));
 
                 if (id.indexOf('.') !== -1)
-                    element = document.getElementsByClassName(id);
+                    element = document.getElementsByClassName(id.replace('.', ''));
 
                 options = element || document.getElementsByTagName(id);
 
