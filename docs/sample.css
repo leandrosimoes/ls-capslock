@@ -1,0 +1,33 @@
+/* LAYOUT OF SAMPLE PAGE */
+html,
+body {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	font-family: Arial, Verdana, sans-serif;
+}
+
+main {
+	width: 30%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+main #sample-capslock-input {
+	width: 100%;
+	margin-top: 50%;
+	height: 30px;
+	padding: 3px;
+}
+
+
+/* HERE I'M USING THE CUSTOM CLASSE THAT I PROVIDED IN OPTIONS */
+.customClass1 {
+	color: #FFB3B3;
+}
+
+.customClass2 {
+	padding-top: 5px;
+}

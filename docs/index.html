@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/ls-capslock.css">
+	<link rel="stylesheet" type="text/css" href="sample.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <main id="main" rel="main">
+        <input id="sample-capslock-input" class="sample-capslock-input" type="text" name="" value="" placeholder="PRESS CAPS LOCK AND FOCUS HERE TO TEST">
+    </main>
+    <script>
+        $(document).ready(function () {
+            ls_capslock.init({
+				element: '#sample-capslock-input',
+				message: 'If you are seen this message, your caps lock is activated!',
+				customClasses: ['customClass1', 'customClass2'],
+				position: 'bottom'
+			});
+        });
+    </script>
+    <script src="assets/js/ls-capslock.js"></script>
+</body>
+
+</html>
