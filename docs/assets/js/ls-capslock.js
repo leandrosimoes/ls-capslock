@@ -34,13 +34,21 @@
         if (message.className.indexOf('ls-capslock-message') === -1) return;
 
         if (!!show) {
-            if (message.className.indexOf('ls-capslock-message-showed') !== -1) return;
-
-            message.classList.add('ls-capslock-message-showed');
+			if (element.className.indexOf('ls-capslock-active') === -1) {
+				element.classList.add('ls-capslock-active');
+			}
+			
+            if (message.className.indexOf('ls-capslock-message-showed') === -1) {
+				message.classList.add('ls-capslock-message-showed');	
+			}
         } else {
-            if (message.className.indexOf('ls-capslock-message-showed') === -1) return;
-
-            message.classList.remove('ls-capslock-message-showed');
+			if (element.className.indexOf('ls-capslock-active') !== -1) {
+				element.classList.remove('ls-capslock-active');
+			}
+			
+            if (message.className.indexOf('ls-capslock-message-showed') !== -1) {
+				message.classList.remove('ls-capslock-message-showed');	
+			}
         }
 
         setMessagePosition(message, element, _position);

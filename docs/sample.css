@@ -20,6 +20,20 @@ main #sample-capslock-input {
 	margin-top: 50%;
 	height: 30px;
 	padding: 3px;
+	color: #555;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #CCC;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #CCC;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #CCC;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #CCC;
 }
 
 
