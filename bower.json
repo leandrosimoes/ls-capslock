@@ -1,0 +1,25 @@
+{
+  "name": "ls-capslock",
+  "main": "ls-capslock.js, ls-capslock.css",
+  "homepage": "https://github.com/leandrosimoes/ls-capslock",
+  "authors": [
+    "Leandro Simões <leandro.simoes@outlook.com>"
+  ],
+  "description": "A little caps lock handler to show a message alert on HTML inputs",
+  "keywords": [
+    "capslock",
+    "caps",
+    "lock",
+    "handler",
+    "message",
+    "alert"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
