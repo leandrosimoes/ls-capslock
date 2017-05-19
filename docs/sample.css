@@ -9,15 +9,23 @@ body {
 	font-family: Arial, Verdana, sans-serif;
 }
 
+h1 {
+	color: #555;
+}
+
 main {
 	width: 30%;
 	height: 100%;
 	margin: 0 auto;
 }
 
-main #sample-capslock-input {
+main #input-area {
+		margin-top: 50%;
+		text-align: center;
+}
+
+main #input-area #sample-capslock-input {
 	width: 100%;
-	margin-top: 50%;
 	height: 30px;
 	padding: 3px;
 	color: #555;
