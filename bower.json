@@ -17,7 +17,7 @@
   "license": "MIT",
   "ignore": [
     "*",
-    "!dist/",
-    "!dist/*"
+    "!dist/css/*",
+    "!dist/js/*"
   ]
 }
