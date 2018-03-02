@@ -31,6 +31,8 @@ ls_capslock.init({
 });
 ```
 
+See live demo [here!](http://lesimoes.com.br/ls-capslock/)
+
 ### Contribute
 
 Any sugestion or bug report, just open a PR on develop branch or mail me at [leandro.simoes@outlook.com](mailto:leandro.simoes@outlook.com)
